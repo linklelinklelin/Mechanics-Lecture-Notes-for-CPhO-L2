@@ -1,0 +1,85 @@
+#import "../../format/lib.typ":*
+#import "../../format/utils.typ":*
+
+== 相对运动与坐标系变换
+
+任何物体的运动都是相对于一定的参考系而言的 . 相对于不同的参考系，同一物体的运动往往具有不同的特征 . 
+
+  - *静止参考系*：通常指相对观察者静止的参考系（常用 $K$ 表示）；也称“地面系”或“实验室系”，记为 $L$.
+  
+  - *运动参考系*：相对观察者运动的参考系（常用 $K'$ 表示） . 
+
+#remark(title:"有关惯性系的讨论1")[
+  
+  这里我们没有提“惯性系”和“非惯性系” . 为什么？你对“惯性系”的理解是如何的？到“牛顿运动定律”那一章，再回来思考这个问题 . 
+]
+
+
+=== 平动参考系下的变换公式
+
+当运动参考系 $K'$ 相对静止参考系 $K$ 仅作平动时，各物理量的关系如下：
+
+1. *位置关系*：
+$ arrow(bold(r))_(13) = arrow(bold(r))_(12) + arrow(bold(r))_(23) $
+
+2. *速度变换（伽利略速度变换）*：
+$ arrow(bold(v))_(13) = arrow(bold(v))_(12) + arrow(bold(v))_(23) $
+即：*绝对速度 = 相对速度 + 牵连速度* ($arrow(bold(v))_a = arrow(bold(v))_r + arrow(bold(v))_e$) . 
+
+3. *加速度变换*：
+$ arrow(bold(a))_(13) = arrow(bold(a))_(12) + arrow(bold(a))_(23) $
+即：*绝对加速度 = 相对加速度 + 牵连加速度* ($arrow(bold(a))_a = arrow(bold(a))_r + arrow(bold(a))_e$) . 
+
+*注*：下标约定，如 $arrow(bold(v))_(13)$ 表示物体 1 相对于参考系 3 的速度 . 
+
+- *原则一*：合速度的前脚标与第一个分速度的前脚标相同；合速度的后脚标与最后一个分速度的后脚标相同 . 
+
+- *原则二*：前面一个分速度的后脚标和相邻的后面一个分速度的前脚标相同 . 
+- *原则三*：速度的前后脚标对调，改变符号（如 $arrow(bold(v))_(12) = -arrow(bold(v))_(21)$） . 
+
+=== 转动参考系下的变换公式
+
+当参考系 2 相对于参考系 3 转动时，角速度为 $arrow(bold(omega))_(23)$，牵连速度包含平动与转动线速度部分 . 
+
+1. *速度变换*：
+$ arrow(bold(v))_(13) = arrow(bold(v))_(12) + arrow(bold(omega))_(23) times arrow(bold(r))_(12) + arrow(bold(v))_(23) $
+其中 $arrow(bold(omega))_(23) times arrow(bold(r))_(12)$ 为转动产生的线速度分量 . 
+
+2. *加速度变换（完整形式）*：
+$ arrow(bold(a))_(13) = arrow(bold(a))_(12) + arrow(bold(a))_(23) + 2 arrow(bold(omega))_(23) times arrow(bold(v))_(12) + arrow(bold(omega))_(23) times (arrow(bold(omega))_(23) times arrow(bold(r))_(12)) + arrow(bold(alpha))_(23) times arrow(bold(r))_(12) $
+
+\
+*各项物理意义*：
+- $arrow(bold(a))_(12)$：相对加速度 . 
+
+- $arrow(bold(a))_(23)$：牵连平动加速度 . 
+- $2 arrow(bold(omega))_(23) times arrow(bold(v))_(12)$：*科里奥利加速度 (Coriolis Acceleration)* . 
+- $arrow(bold(omega))_(23) times (arrow(bold(omega))_(23) times arrow(bold(r))_(12))$：向心加速度 . 
+- $arrow(bold(alpha))_(23) times arrow(bold(r))_(12)$：切向加速度（由角加速度产生） . 
+
+\
+\
+
+#example()[
+  
+  由于汽车在冰面上行驶时摩擦因数很小，所以其最大加速度不能超过 $a = 0.5 "m/s"^2$ . 根据要求，驾驶员必须在最短时间内从 $A$ 点到达 $B$ 点，直线 $A B$ 垂直于汽车的初始速度 $v$. 如果 $A$、$B$ 之间的距离 $A B = 375 "m"$，而初速度 $v = 10 "m/s"$，那么最短时间为多少？其运动轨迹是什么？
+]
+
+#pagebreak()
+
+#example(title:"经典狐狸狗2")[
+
+  在平面 $O x y$ 中，有一只狐狸以恒定速度 $v_1$ 沿着直线 $y=L$ 逃跑，一条猎犬以恒定速率 $v_2$ 追击，方向始终对准狐狸. $t=0$ 时狐狸位于 $(0,L)$ ，猎犬位于坐标原点.
+
+  
+  1. 试求此时猎犬的加速度大小 . 
+  
+  2. 经多长时间狐狸会被追上？
+
+  3. 以狐狸为参考系，试求猎犬的轨迹方程 . 
+
+  4. （选做）求 $O x y$ 系中猎犬的轨迹方程 . 
+
+]
+
+#pagebreak()

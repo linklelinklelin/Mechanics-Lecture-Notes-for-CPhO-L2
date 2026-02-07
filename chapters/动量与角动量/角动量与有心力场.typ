@@ -1,0 +1,122 @@
+#import "../../format/lib.typ":*
+#import "../../format/utils.typ":*
+
+== 角动量与角动量守恒
+
+在研究天体运行、刚体定轴转动或质点绕固定中心运动时，动量在空间中的分布特征变得至关重要 . 角动量正是描述这种“转动惯性”的状态量 . 
+
+=== 角动量的定义：动量矩
+
+#definition(title:"角动量")[
+  设质点质量为 $m$，动量为 $arrow(bold(p)) = m arrow(bold(v))$，质点相对于参考点 $O$ 的位矢为 $arrow(bold(r))$ . 定义质点对 $O$ 点的*角动量*（又称动量矩）为位矢与动量的矢量积：
+$ arrow(bold(L)) = arrow(bold(r)) times arrow(bold(p)) = m (arrow(bold(r)) times arrow(bold(v))) $
+]
+
+
+- *矢量特性*：根据右手螺旋定则，角动量 $arrow(bold(L))$ 垂直于 $arrow(bold(r))$ 与 $arrow(bold(v))$ 确定的平面 . 
+
+- *大小计算*：$L = r m v sin alpha$ . 其中 $alpha$ 为位矢与速度方向的夹角 . 
+- *特殊情况*：当质点做半径为 $R$ 的圆周运动时，$arrow(bold(r))$ 与 $arrow(bold(v))$ 始终垂直，角动量大小简化为 $L = m v R$ . 
+
+- *质心系的角动量（类比柯尼希定理）*
+对于质点系，总角动量等于随质心平动的角动量与相对质心运动的角动量之和 . 这一分解在处理既有平动又有转动的刚体问题（如滚动的小球）时非常有用 . 
+
+=== 角动量定理：力矩的积累
+
+==== 1. 微分形式：转动的牛顿第二定律
+我们将角动量 $arrow(bold(L))$ 对时间求导，探究其变化原因：
+$ (upright(d) arrow(bold(L))) / (upright(d) t) = (upright(d) (arrow(bold(r)) times arrow(bold(p)))) / (upright(d) t) = ((upright(d) arrow(bold(r))) / (upright(d) t) times arrow(bold(p))) + (arrow(bold(r)) times (upright(d) arrow(bold(p))) / (upright(d) t)) $
+由于 $(upright(d) arrow(bold(r))) / (upright(d) t) = arrow(bold(v))$ 且 $arrow(bold(v)) times (m arrow(bold(v))) = 0$，上式简化为：
+$ (upright(d) arrow(bold(L))) / (upright(d) t) = arrow(bold(r)) times arrow(bold(F)) = arrow(bold(M)) $
+
+#theorem(title: "角动量定理")[
+  物体所受合外力对某点的力矩 $arrow(bold(M))$，等于物体对该点的角动量随时间的变化率 . 
+]
+
+
+==== 2. 积分形式：角动量冲量
+在一段时间间隔 $[t_1, t_2]$ 内，力矩对时间的累积称为*冲量矩* . 角动量定理的积分形式为：
+$ integral_(t_1)^(t_2) arrow(bold(M)) upright(d) t = arrow(bold(L))_2 - arrow(bold(L))_1 $
+
+=== 有心力场与角动量守恒
+
+==== 1. 什么是有心力场？
+如果一个质点受到的作用力 $arrow(bold(F))$ 始终指向（或背离）空间中某一个固定点 $O$，则称该力场为*有心力场*，点 $O$ 称为力中心 . 
+
+- *典型例子*：万有引力场、库仑电场 . 
+
+- *核心力学性质*：由于力 $arrow(bold(F))$ 的作用线始终通过点 $O$，力对中心 $O$ 的力矩恒等于零：
+  $ arrow(bold(M)) = arrow(bold(r)) times arrow(bold(F)) = 0 $
+
+==== 2. 有心力场中的角动量守恒
+在有心力场中，由于 $arrow(bold(M)) = 0$，根据角动量定理，质点对力中心的角动量 $arrow(bold(L))$ 保持不变：
+$ arrow(bold(L)) = m (arrow(bold(r)) times arrow(bold(v))) = "常量" $
+这一守恒律带来两个极其重要的物理推论：
+
+- *平面运动*：由于 $arrow(bold(L))$ 方向不变，且 $arrow(bold(r))$ 始终垂直于 $arrow(bold(L))$，因此质点的运动轨迹必然被锁定在与 $arrow(bold(L))$ 垂直的平面内 . 
+
+- *开普勒第二定律（面积定律）*：质点的扫过面积速率 $ (upright(d) A) / (upright(d) t) = (1) / (2) |arrow(bold(r)) times arrow(bold(v))| = (L) / (2m) $ 由于 $L$ 守恒，行星在相等时间内扫过的面积相等 . 
+
+=== 角动量守恒的应用判据
+
+只要系统受到的合外力矩为零，角动量便守恒 . 这通常发生在以下情况：
+
+1. 质点受到的力通过定点（有心力） . 
+
+2. 质点受到的外力矩之和为零 . 
+3. 在碰撞、打击等瞬时过程中，若外力矩远小于内力矩（且作用时间极短），可近似认为角动量守恒 . 
+
+\
+
+#example()[
+ 
+  一个质量为 $m$ 的小球系于一根不能伸长的轻绳的一端，放在光滑的水平桌面上 . 绳的另一端穿过桌面上的一个小孔，用手拉住 . 先给小球一初速度 $v_1$，使它沿半径为 $r_1$ 的圆周运动 . 现慢慢向下拉绳，使小球转动半径减小至 $r_2$ . 求此时小球的速率 $v_2$ . 
+]
+
+#pagebreak()
+
+#example(title: "万有引力公式的由来")[
+
+  用迄今为止学过的知识，由开普勒三定律，推出万有引力公式 $F=G (M m)/r^2 $ .
+
+  1. 轨道定律：所有行星绕太阳运动的轨道都是椭圆，太阳位于椭圆的一个焦点上 . 
+  
+  2. 面积定律：对于同一个行星，太阳和行星的连线在相等的时间内扫过的面积相等 . 
+
+  3. 周期定律：所有行星轨道的半长轴 $a$ 的立方与其公转周期 $T$ 的平方之比是一个常量 . 
+]
+
+#pagebreak()
+
+#example(title: "线性斥力场中质点的速度计算")[
+  
+  如图所示，$m$ 受 $O$ 点的斥力 $F_0 = alpha r$ ($alpha > 0$)，假设有 $4 alpha a^2 = m v_0^2$，$m$ 在 $P$ 点时 $v$ 与 $r$ 垂直，求 $v$ . （用 $v_0$ 和数字表示 . ）
+
+  #align(right)[
+    #block(width: 20%)[
+      #figure(
+        image("image/专题精编352.png", width: 100%),
+      )
+    ]
+  ]
+]
+
+#pagebreak()
+
+#example()[
+  
+  质量可忽略，长为 $L$ 的细杆可以绕地面上的 $O$ 点无摩擦地旋转，上端连一小球 $P$，开始时细杆与竖直轴的夹角为 $theta_0 = 45^degree$，小球具有垂直于杆且在水平面内的速度 $v_0 = sqrt(2 g L)$，如图所示 . 而后杆会旋转着倾倒，小球与地面会发生碰撞 . 
+
+  (1) 计算小球倒地前的瞬间竖直向下的速度 $v_perp$； \
+  (2) 假设小球与地面碰撞后的瞬间会有竖直向上的速度，而且速度是 (1) 中 $v_perp$ 的 $sqrt(2) / 2$ 倍，试求小球与地面间摩擦因数 $mu$（设为常数）的取值范围 . 
+
+  \
+
+  #align(right)[
+    #block(width: 40%)[
+      #figure(
+        image("image/专题精编353.png", width: 100%),
+      )
+    ]
+  ]
+]
