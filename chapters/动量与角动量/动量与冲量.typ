@@ -8,8 +8,8 @@
 === 动量：描述运动量的状态量
 
 #definition(title: "动量")[
-  质量为 $m$、速度为 $arrow(bold(v))$ 的质点的*动量*为质量与速度的乘积：
-$ arrow(bold(p)) = m arrow(bold(v)) $
+  质量为 $m$、速度为 $vec(v)$ 的质点的*动量*为质量与速度的乘积：
+$ vec(p) = m vec(v) $
 ]
 
 
@@ -26,41 +26,41 @@ $ arrow(bold(p)) = m arrow(bold(v)) $
 
 === 冲量：力在时间上的累积效应
 
-冲量 $arrow(bold(I))$ 描述了力在一段持续时间内对质点的作用总效果 . 
+冲量 $vec(I)$ 描述了力在一段持续时间内对质点的作用总效果 . 
 
 #definition(title: "冲量")[
-  合外力 $arrow(bold(F))$ 在时间段 $[t_0, t]$ 内的冲量为：
-$ arrow(bold(I)) = integral_(t_0)^t arrow(bold(F)) upright(d) t $
+  合外力 $vec(F)$ 在时间段 $[t_0, t]$ 内的冲量为：
+$ vec(I) = integral_(t_0)^t vec(F) dif t $
 
 ]
 
 
-- *恒力的冲量*：若力 $arrow(bold(F))$ 大小方向均不变，则 $arrow(bold(I)) = arrow(bold(F)) (t - t_0)$ . 
+- *恒力的冲量*：若力 $vec(F)$ 大小方向均不变，则 $vec(I) = vec(F) (t - t_0)$ . 
 
-- *变力的冲量*：在 $arrow(bold(F))-t$ 图像中，冲量的大小等于曲线与时间轴所包围的“面积” . 
+- *变力的冲量*：在 $vec(F)-t$ 图像中，冲量的大小等于曲线与时间轴所包围的“面积” . 
 - *单位*：冲量的单位是 $N dot s$，在数值和量纲上与动量单位 $k g dot m/s$ 完全等价 . 
 
 === 动量定理：动力学的积分形式
 
 ==== 质点动量定理的推导
 从牛顿第二定律的本原形式出发：
-$ arrow(bold(F)) = (upright(d) arrow(bold(p))) / (upright(d) t) $
+$ vec(F) = (dif vec(p)) / (dif t) $
 将上式两边对时间 $t$ 进行积分：
-$ integral_(t_0)^t arrow(bold(F)) upright(d) t = integral_(arrow(bold(p))_0)^(arrow(bold(p))) upright(d) arrow(bold(p)) $
-左边即为冲量 $arrow(bold(I))$，右边为动量的增量 $Delta arrow(bold(p))$，故得：
+$ integral_(t_0)^t vec(F) dif t = integral_(vec(p)_0)^(vec(p)) dif vec(p) $
+左边即为冲量 $vec(I)$，右边为动量的增量 $Delta vec(p)$，故得：
 
 #theorem(title: "动量定理")[
   质点所受合外力的冲量，等于该质点动量的变化 . 
-  $ arrow(bold(I)) = Delta arrow(bold(p)) = m arrow(bold(v)) - m arrow(bold(v))_0 $
+  $ vec(I) = Delta vec(p) = m vec(v) - m vec(v)_0 $
   
 ]
 
 *物理意义*：这揭示了过程量（冲量）与状态改变量（动量增量）之间的因果关系 . 
 
 ==== 冲力与碰撞时间的深度探讨
-在物理竞赛中，我们经常遇到打击、碰撞等场景，这些过程的特点是时间 $Delta t$ 极短，而相互作用力 $arrow(bold(F))$ 极大 . 这类力通常被称为*冲力* . 
+在物理竞赛中，我们经常遇到打击、碰撞等场景，这些过程的特点是时间 $Delta t$ 极短，而相互作用力 $vec(F)$ 极大 . 这类力通常被称为*冲力* . 
 
-- *平均冲力*：由 $lr(chevron.l arrow(bold(F)) chevron.r) Delta t = Delta arrow(bold(p))$ 可知，对于相同的动量变化，作用时间越短，冲力就越大 . 
+- *平均冲力*：由 $lr(chevron.l vec(F) chevron.r) Delta t = Delta vec(p)$ 可知，对于相同的动量变化，作用时间越短，冲力就越大 . 
 
 - *缓冲原理*：在工业防护、体育器材设计中，通过增加形变距离来延长接触时间 $Delta t$，从而降低平均冲力 . 
 - *重力的忽略*：在处理极短时间的冲力问题时，若 $F >> m g$，通常可以忽略重力的冲量，认为系统动量在碰撞瞬间守恒 . 
@@ -69,16 +69,16 @@ $ integral_(t_0)^t arrow(bold(F)) upright(d) t = integral_(arrow(bold(p))_0)^(ar
 === 质点系动量定理
 
 对于由多个质点组成的体系，每个质点 $i$ 都满足动量定理：
-$ arrow(bold(I))_(i, "外") + arrow(bold(I))_(i, "内") = upright(d) arrow(bold(p))_i $
+$ vec(I)_(i, "外") + vec(I)_(i, "内") = dif vec(p)_i $
 对所有质点求和：
-$ sum arrow(bold(I))_(i, "外") + sum arrow(bold(I))_(i, "内") = (upright(d)) / (upright(d) t) (sum m_i arrow(bold(v))_i) $
+$ sum vec(I)_(i, "外") + sum vec(I)_(i, "内") = (dif ) / (dif t) (sum m_i vec(v)_i) $
 
-由牛顿第三定律，内力冲量的矢量和 $sum arrow(bold(I))_(i, "内")eq.triple 0$ .
+由牛顿第三定律，内力冲量的矢量和 $sum vec(I)_(i, "内")eq.triple 0$ .
 
 #theorem(title: "质点系动量定理")[
   质点系总动量的改变仅由外力的冲量决定，内力无法改变系统的总动量 . 
 
-  $ arrow(bold(I))_("合外") = Delta arrow(bold(P))_("总") $
+  $ vec(I)_("合外") = Delta vec(P)_("总") $
 ]
 
 #example(title: "链状质点组受冲量后的速度分布")[

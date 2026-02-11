@@ -21,7 +21,7 @@
 *定律表述*：物体的加速度与其所受的合外力成正比，与其质量成反比 . 加速度的方向与合外力的方向始终一致 . 
 
 - *动力学核心方程*：
-$ arrow(bold(F)) = m arrow(bold(a)) $
+$ vec(F) = m vec(a) $
 
 #remark()[
   至少到高中课内确实是这么讲的 . 但实际上，这个方程并不准确，也并不接近牛顿在《自然哲学中的数学原理》中的原始表述 . 实际上，这个公式符号其实不是牛顿写的，而是*欧拉*在牛顿去世多年后（约1750年），为了方便处理质点和刚体动力学，才正式写成这种代数形式的 . 
@@ -32,13 +32,13 @@ $ arrow(bold(F)) = m arrow(bold(a)) $
 #theorem(title:"牛顿第二定律")[
   力与动量的变化率成正比 . 
 
-  $ arrow(bold(F)) = (upright(d)arrow(bold(p))) / (upright(d)t) $
+  $ vec(F) = (dif vec(p)) / (dif t) $
 
 ]
   
-  从更普遍的物理意义上讲，力等于动量 $arrow(bold(p)) = m arrow(bold(v))$ 对时间的变化率：
-  $ arrow(bold(F)) = (upright(d)arrow(bold(p))) / (upright(d)t) = (upright(d)(m arrow(bold(v)))) / (upright(d)t) $
-  大多数时候，质量 $m$ 通常视为常数，故方程简化为 $arrow(bold(F)) = m arrow(bold(a))$ . 
+  从更普遍的物理意义上讲，力等于动量 $vec(p) = m vec(v)$ 对时间的变化率：
+  $ vec(F) = (dif vec(p)) / (dif t) = (dif (m vec(v))) / (dif t) $
+  大多数时候，质量 $m$ 通常视为常数，故方程简化为 $vec(F) = m vec(a)$ . 
 
 - 在处理变质量系统（如火箭喷气、雨滴积聚水分）或瞬时作用力（冲量问题）时，动量形式的第二定律展现出了极强的统一性与简洁性 . 
 
@@ -49,7 +49,7 @@ $ arrow(bold(F)) = m arrow(bold(a)) $
   $ sum F_x = m a_x, quad sum F_y = m a_y $
   此外，力对运动的影响具有独立性，每一个力都会产生对应的加速度分量 . 
   
-- *瞬时性*：牛顿第二定律是瞬时方程 . 加速度 $arrow(bold(a))$ 与合外力 $arrow(bold(F))$ 具有严格的时间对应关系，力消失，加速度立即消失 . 
+- *瞬时性*：牛顿第二定律是瞬时方程 . 加速度 $vec(a)$ 与合外力 $vec(F)$ 具有严格的时间对应关系，力消失，加速度立即消失 . 
 
 === 牛顿第三定律：相互作用的对称性
 

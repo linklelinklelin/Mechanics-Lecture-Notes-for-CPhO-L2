@@ -24,7 +24,7 @@
 
   
 - *小船靠岸问题*：
-  一根绳子拉着船以速度 $arrow(bold(v))$ 靠岸 . 可将 $arrow(bold(v))$ 分解为沿绳方向的分量 $arrow(bold(v))_1$（使绳缩短）和垂直于绳的分量 $arrow(bold(v))_2$（使绳转动） . 
+  一根绳子拉着船以速度 $vec(v)$ 靠岸 . 可将 $vec(v)$ 分解为沿绳方向的分量 $vec(v)_1$（使绳缩短）和垂直于绳的分量 $vec(v)_2$（使绳转动） . 
 
 #figure(
   image("image/小船靠岸.png", width: 30%),

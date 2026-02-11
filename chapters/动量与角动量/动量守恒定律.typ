@@ -12,12 +12,12 @@
 ]
 
 ==== 从质点系动量定理推导
-对于一个由 $n$ 个质点组成的系统，其总动量 $arrow(bold(P))$ 对时间的变化率由系统所受的合外力决定：
-$ sum arrow(bold(F))_("外") = (upright(d) arrow(bold(P))) / (upright(d) t) $
-若系统所受合外力的矢量和为零，即 $sum arrow(bold(F))_("外") = 0$，则有：
-$ (upright(d) arrow(bold(P))) / (upright(d) t) = 0 quad arrow quad arrow(bold(P)) = "常量" $
+对于一个由 $n$ 个质点组成的系统，其总动量 $vec(P)$ 对时间的变化率由系统所受的合外力决定：
+$ sum vec(F)_("外") = (dif vec(P)) / (dif t) $
+若系统所受合外力的矢量和为零，即 $sum vec(F)_("外") = 0$，则有：
+$ (dif vec(P)) / (dif t) = 0 quad arrow quad vec(P) = "常量" $
 即：
-$ m_1 arrow(bold(v))_1 + m_2 arrow(bold(v))_2 + dots + m_n arrow(bold(v))_n = m_1 arrow(bold(v))'_1 + m_2 arrow(bold(v))'_2 + dots + m_n arrow(bold(v))'_n $
+$ m_1 vec(v)_1 + m_2 vec(v)_2 + dots + m_n vec(v)_n = m_1 vec(v)'_1 + m_2 vec(v)'_2 + dots + m_n vec(v)'_n $
 
 #remark(title: "动量守恒的物理本质")[
 
@@ -43,7 +43,7 @@ $ sum m_i v_(i,x) = "常量" $
 === 质心视角下的动量守恒
 
 ==== 质心运动状态的稳定性
-由于系统的总动量可以表示为 $arrow(bold(P)) = M arrow(bold(v))_c$（其中 $M$ 为总质量，$arrow(bold(v))_c$ 为质心速度），动量守恒意味着内力（无论多么剧烈，如系统内部发生爆炸）只能改变各部分的运动，绝不能改变质心的运动状态 . 
+由于系统的总动量可以表示为 $vec(P) = M vec(v)_c$（其中 $M$ 为总质量，$vec(v)_c$ 为质心速度），动量守恒意味着内力（无论多么剧烈，如系统内部发生爆炸）只能改变各部分的运动，绝不能改变质心的运动状态 . 
 
 \
 

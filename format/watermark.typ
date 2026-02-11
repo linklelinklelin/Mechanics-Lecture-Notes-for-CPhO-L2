@@ -4,7 +4,7 @@
   // 设置全局水印样式
   set text(
     font: "Noto Sans CJK SC",
-    fill: rgb(200, 200, 200, 20%), // 降低透明度，适合多行平铺
+    fill: rgb(200, 200, 200, 1%), // 降低透明度，适合多行平铺
     size: 40pt,                    // 多行水印建议尺寸稍小
     weight: "bold",
   )

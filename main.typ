@@ -14,7 +14,15 @@
   author: "王舶浩",
   date: "2026.02",
   // Optional: dedication and abstract
-  dedication: [献给我的学生与挚友们 . ],
+  dedication: [本书以 CC BY-NC-ND 4.0 协议进行发布 ,
+  
+  即允许下载和分享作品 , 但必须注明作者 ,
+  
+  且不得未经准许进行任何形式的修改或用于商业目的 . 
+  
+  ©2026 https://github.com/linklelinklelin/Mechanics-Lecture-Notes-for-CPhO-L2 .
+
+ 献给我的学生与挚友们 . ],
   // abstract: [This is the abstract of your work...],
 )
 

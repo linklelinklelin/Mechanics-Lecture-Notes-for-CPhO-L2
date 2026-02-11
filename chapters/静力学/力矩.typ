@@ -8,29 +8,29 @@
 === 力矩的矢量定义
 
 #definition(title:"力矩")[
-  力对某参考点 $O$ 的力矩 $arrow(bold(M))$ 定义为作用点位矢 $arrow(bold(r))$ 与力 $arrow(bold(F))$ 的矢量积：
+  力对某参考点 $O$ 的力矩 $vec(M)$ 定义为作用点位矢 $vec(r)$ 与力 $vec(F)$ 的矢量积：
   
-$ arrow(bold(M)) = arrow(bold(r)) times arrow(bold(F)) $
+$ vec(M) = vec(r) times vec(F) $
 ]
 
 
 - *大小*：$M = r F sin theta = F d$，其中 $d$ 是从转动中心到力作用线的垂直距离，称为*力臂* . 
 
-- *方向*：根据右手螺旋定则判定，垂直于 $arrow(bold(r))$ 与 $arrow(bold(F))$ 确定的平面 . 
+- *方向*：根据右手螺旋定则判定，垂直于 $vec(r)$ 与 $vec(F)$ 确定的平面 . 
 
 === 力矩由来的动力学推导
 
 力矩的概念并非人为的主观设定，而是牛顿第二定律在转动体系下的必然延伸 . 
 考虑一个质量为 $m$ 的质点绕 $O$ 点运动，根据牛顿第二定律：
-$ arrow(bold(F)) = (upright(d) arrow(bold(p))) / (upright(d) t) = (upright(d) (m arrow(bold(v)))) / (upright(d) t) $
-为了描述该力产生的绕 $O$ 点的转动效应，我们对式子两边左叉乘位矢 $arrow(bold(r))$：
-$ arrow(bold(r)) times arrow(bold(F)) = arrow(bold(r)) times (upright(d) (m arrow(bold(v)))) / (upright(d) t) $
+$ vec(F) = (dif vec(p)) / (dif t) = (dif (m vec(v))) / (dif t) $
+为了描述该力产生的绕 $O$ 点的转动效应，我们对式子两边左叉乘位矢 $vec(r)$：
+$ vec(r) times vec(F) = vec(r) times (dif (m vec(v))) / (dif t) $
 根据矢量导数运算法则：
-$ (upright(d) (arrow(bold(r)) times m arrow(bold(v)))) / (upright(d) t) = ((upright(d) arrow(bold(r))) / (upright(d) t) times m arrow(bold(v))) + (arrow(bold(r)) times (upright(d) (m arrow(bold(v)))) / (upright(d) t)) $
-由于 $(upright(d) arrow(bold(r))) / (upright(d) t) = arrow(bold(v))$，且 $arrow(bold(v)) times m arrow(bold(v)) = 0$（同向矢量叉乘为零），上述方程简化为：
-$ arrow(bold(r)) times arrow(bold(F)) = (upright(d) (arrow(bold(r)) times arrow(bold(p)))) / (upright(d) t) $
-我们定义 $arrow(bold(L)) = arrow(bold(r)) times arrow(bold(p))$ 为角动量，则有：
-$ arrow(bold(M)) = (upright(d) arrow(bold(L))) / (upright(d) t) $
+$ (dif (vec(r) times m vec(v))) / (dif t) = ((dif vec(r)) / (dif t) times m vec(v)) + (vec(r) times (dif (m vec(v))) / (dif t)) $
+由于 $(dif vec(r)) / (dif t) = vec(v)$，且 $vec(v) times m vec(v) = 0$（同向矢量叉乘为零），上述方程简化为：
+$ vec(r) times vec(F) = (dif (vec(r) times vec(p))) / (dif t) $
+我们定义 $vec(L) = vec(r) times vec(p)$ 为角动量，则有：
+$ vec(M) = (dif vec(L)) / (dif t) $
 
 这说明：*力矩是物体角动量随时间变化的原因* . 在静力学中，当物体角动量保持不变（如静止）时，其合外力矩必然为零 . 
 
@@ -49,7 +49,7 @@ $ arrow(bold(M)) = (upright(d) arrow(bold(L))) / (upright(d) t) $
     
 - *刚体平衡的充要条件*：
 
-  $ sum arrow(bold(F)) = 0, quad sum arrow(bold(M)) = 0 $
+  $ sum vec(F) = 0, quad sum vec(M) = 0 $
   
   在实际解题中，矩心的选择极其重要 . 通常选择多个未知力的交点作为矩心，可以简化方程 . 
 

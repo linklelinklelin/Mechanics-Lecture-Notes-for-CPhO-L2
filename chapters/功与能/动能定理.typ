@@ -13,12 +13,12 @@
 
 === 质点的动能定理
 
-考虑质量为 $m$ 的质点，在合外力 $arrow(bold(F))$ 的作用下沿某路径运动 . 根据牛顿第二定律 $arrow(bold(F)) = m (upright(d) arrow(bold(v))) / (upright(d) t)$，力在微小位移 $upright(d) arrow(bold(r))$ 上所做的功为：
-$ upright(d) W = arrow(bold(F)) dot upright(d) arrow(bold(r)) = m (upright(d) arrow(bold(v))) / (upright(d) t) dot (arrow(bold(v)) upright(d) t) = m arrow(bold(v)) dot upright(d) arrow(bold(v)) $
-由于 $arrow(bold(v)) dot upright(d) arrow(bold(v)) = (1) / (2) upright(d) (v^2)$，我们得到：
-$ upright(d) W = upright(d) ( (1) / (2) m v^2 ) $
+考虑质量为 $m$ 的质点，在合外力 $vec(F)$ 的作用下沿某路径运动 . 根据牛顿第二定律 $vec(F) = m (dif vec(v)) / (dif t)$，力在微小位移 $dif vec(r)$ 上所做的功为：
+$ dif W = vec(F) dot dif vec(r) = m (dif vec(v)) / (dif t) dot (vec(v) dif t) = m vec(v) dot dif vec(v) $
+由于 $vec(v) dot dif vec(v) = (1) / (2) dif (v^2)$，我们得到：
+$ dif W = dif ( (1) / (2) m v^2 ) $
 定义 $K = (1) / (2) m v^2$ 为质点的*动能* . 对整个过程积分可得：
-$ W = integral_(arrow(bold(r))_1)^(arrow(bold(r))_2) arrow(bold(F)) dot upright(d) arrow(bold(r)) = K_2 - K_1 = Delta K $
+$ W = integral_(vec(r)_1)^(vec(r)_2) vec(F) dot dif vec(r) = K_2 - K_1 = Delta K $
 
 #theorem(title:"动能定理")[
   合外力对质点所做的总功等于该质点动能的增量 . 
@@ -33,7 +33,7 @@ $ W = integral_(arrow(bold(r))_1)^(arrow(bold(r))_2) arrow(bold(F)) dot upright(
 
 - *逻辑路径 A：功的操作性定义（经典视角）*
 
-  在经典力学中，我们先定义了功 $W = integral arrow(bold(F)) dot upright(d) arrow(bold(r))$ . 我们说功是能量的转移或转化量，那么我们利用牛顿第二定律进行数学推导，将物体从 $v_1$ 加速到 $v_2$ 所需要的功，就应该是物体动能的增长量 . 在这个视角下，*动能定理确实定义了动能的形式* . 
+  在经典力学中，我们先定义了功 $W = integral vec(F) dot dif vec(r)$ . 我们说功是能量的转移或转化量，那么我们利用牛顿第二定律进行数学推导，将物体从 $v_1$ 加速到 $v_2$ 所需要的功，就应该是物体动能的增长量 . 在这个视角下，*动能定理确实定义了动能的形式* . 
 
 - *逻辑路径 B：伽利略不变性（对称性视角）*
 
@@ -55,19 +55,19 @@ $ W = integral_(arrow(bold(r))_1)^(arrow(bold(r))_2) arrow(bold(F)) dot upright(
 对于由 $n$ 个质点组成的体系，我们需要寻找一个能代表整体平动特征的点 . 
 
 #definition(title:"质心")[
-  质点系的*质心坐标* $arrow(bold(r))_c$ 为体系各质点位矢按质量加权的平均值：
-  $ arrow(bold(r))_c = (sum m_i arrow(bold(r))_i) / (sum m_i) = (1) / (M) sum m_i arrow(bold(r))_i $
-  对于连续分布的质量，则表示为：$arrow(bold(r))_c = (1) / (M) integral arrow(bold(r)) upright(d) m$ . 
+  质点系的*质心坐标* $vec(r)_c$ 为体系各质点位矢按质量加权的平均值：
+  $ vec(r)_c = (sum m_i vec(r)_i) / (sum m_i) = (1) / (M) sum m_i vec(r)_i $
+  对于连续分布的质量，则表示为：$vec(r)_c = (1) / (M) integral vec(r) dif m$ . 
 ]
 
 #remark[
   为什么位矢按质量加权就是质心？这是定义，但人类是如何意识到质心具有各种优良性质的？
 ]
 
-- *质心运动定理*：对上式求导可得 $M arrow(bold(v))_c = sum m_i arrow(bold(v))_i = arrow(bold(P))$（总动量） . 再次求导得：
-  $ M arrow(bold(a))_c = sum arrow(bold(F))_i^((e x t)) + sum arrow(bold(F))_i^((i n t)) $
-  由于内力成对存在且满足牛顿第三定律，$sum arrow(bold(F))_i^((i n t)) = 0$，故：
-  $ M arrow(bold(a))_c = arrow(bold(F))_("合外") $
+- *质心运动定理*：对上式求导可得 $M vec(v)_c = sum m_i vec(v)_i = vec(P)$（总动量） . 再次求导得：
+  $ M vec(a)_c = sum vec(F)_i^((e x t)) + sum vec(F)_i^((i n t)) $
+  由于内力成对存在且满足牛顿第三定律，$sum vec(F)_i^((i n t)) = 0$，故：
+  $ M vec(a)_c = vec(F)_("合外") $
 
 #theorem(title:"质心运动定理")[
   质点系的质心运动，如同一个质量等于全系总质量的质点，受全系合外力作用而运动 . 
@@ -77,23 +77,23 @@ $ W = integral_(arrow(bold(r))_1)^(arrow(bold(r))_2) arrow(bold(F)) dot upright(
 
 === 质心系动能定理与柯尼希定理
 
-在刚体动力学中，将物体的运动分解为“随质心的平动”和“相对质心的转动/变形”是极其高效的方法 . 既然这样，我们就需要考察质心的动能与总动能的关系 . 当然，我们可以把刚体看作一个由无数个 $upright(d) m$ 构成的质点系 . 
+在刚体动力学中，将物体的运动分解为“随质心的平动”和“相对质心的转动/变形”是极其高效的方法 . 既然这样，我们就需要考察质心的动能与总动能的关系 . 当然，我们可以把刚体看作一个由无数个 $dif m$ 构成的质点系 . 
 
 我们先来考察一个由 $n$ 个质点构成的质点系 . 设编号第 $i$ 个质点的质量为 $m_i$ .
 
-1. 设质点 $i$ 在实验室系中的速度为 $arrow(bold(v))_i$，质心速度为 $arrow(bold(v))_c$ . 
+1. 设质点 $i$ 在实验室系中的速度为 $vec(v)_i$，质心速度为 $vec(v)_c$ . 
 
-2. 定义质点 $i$ 相对于质心的速度为 $arrow(bold(v))_i'$，则有矢量关系：
-   $ arrow(bold(v))_i = arrow(bold(v))_c + arrow(bold(v))_i' $
+2. 定义质点 $i$ 相对于质心的速度为 $vec(v)_i'$，则有矢量关系：
+   $ vec(v)_i = vec(v)_c + vec(v)_i' $
 3. 体系的总动能 $K$ 为各质点动能之和：
-   $ K = sum (1) / (2) m_i v_i^2 = sum (1) / (2) m_i (arrow(bold(v))_c + arrow(bold(v))_i') dot (arrow(bold(v))_c + arrow(bold(v))_i') $
+   $ K = sum (1) / (2) m_i v_i^2 = sum (1) / (2) m_i (vec(v)_c + vec(v)_i') dot (vec(v)_c + vec(v)_i') $
 4. 展开标量积：
-   $ K = sum (1) / (2) m_i (v_c^2 + 2 arrow(bold(v))_c dot arrow(bold(v))_i' + v_i'^2) $
+   $ K = sum (1) / (2) m_i (v_c^2 + 2 vec(v)_c dot vec(v)_i' + v_i'^2) $
 5. 利用求和分配律：
-   $ K = (1) / (2) (sum m_i) v_c^2 + arrow(bold(v))_c dot (sum m_i arrow(bold(v))_i') + sum (1) / (2) m_i v_i'^2 $
+   $ K = (1) / (2) (sum m_i) v_c^2 + vec(v)_c dot (sum m_i vec(v)_i') + sum (1) / (2) m_i v_i'^2 $
 6. 分析中间项：
-   根据质心定义，在质心系中，各质点的质量加权位矢之和为零（$sum m_i arrow(bold(r))_i' = 0$），对其求导可得：
-   $ sum m_i arrow(bold(v))_i' = 0 $
+   根据质心定义，在质心系中，各质点的质量加权位矢之和为零（$sum m_i vec(r)_i' = 0$），对其求导可得：
+   $ sum m_i vec(v)_i' = 0 $
    即*质心系中的总动量恒为零* . 因此中间项消失 . 
 7. 得出结论：
    $ K = (1) / (2) M v_c^2 + K' $
@@ -114,7 +114,7 @@ $ Delta K=W_"内" + W_"外" $
 #theorem(title:"赝功定理")[
   外力点乘质心位移的总和等于质心动能的变化. 
 
-  $ Delta K_C = arrow(bold(F))_"合" dot Delta r_C $
+  $ Delta K_C = vec(F)_"合" dot Delta r_C $
 ]
 
 
@@ -127,22 +127,22 @@ $ Delta K=W_"内" + W_"外" $
 
 
 
-1. 考虑系统中第 $i$ 个质点，在实验室系中的位矢为 $arrow(bold(r))_i$，在质心系中的位矢为 $arrow(bold(r))_i'$ . 
+1. 考虑系统中第 $i$ 个质点，在实验室系中的位矢为 $vec(r)_i$，在质心系中的位矢为 $vec(r)_i'$ . 
 
-2. 该质点受到的合力为 $arrow(bold(F))_(i, "外") + arrow(bold(F))_(i, "内")$ . 根据动能定理，在实验室系中，合力功为：
-   $ upright(d) W_i = (arrow(bold(F))_(i, "外") + arrow(bold(F))_(i, "内")) dot upright(d) arrow(bold(r))_i $
-   代入位移分解 $upright(d) arrow(bold(r))_i = upright(d) arrow(bold(r))_C + upright(d) arrow(bold(r))_i'$：
-   $ upright(d) W_i = (arrow(bold(F))_(i, "外") + arrow(bold(F))_(i, "内")) dot upright(d) arrow(bold(r))_C + (arrow(bold(F))_(i, "外") + arrow(bold(F))_(i, "内")) dot upright(d) arrow(bold(r))_i' $
-3. 对所有质点求和，总功 $upright(d) W$ 为：
-   $ upright(d) W = (sum arrow(bold(F))_(i, "外") + sum arrow(bold(F))_(i, "内")) dot upright(d) arrow(bold(r))_C + sum (arrow(bold(F))_(i, "外") + arrow(bold(F))_(i, "内")) dot upright(d) arrow(bold(r))_i' $
-4. 利用质心运动定理 $sum arrow(bold(F))_(i, "外") = M arrow(bold(a))_C$ 以及内力抵消 $sum arrow(bold(F))_(i, "内") = 0$，上式变为：
-   $ upright(d) W = (M arrow(bold(a))_C dot upright(d) arrow(bold(r))_C) + sum (arrow(bold(F))_(i, "外") + arrow(bold(F))_(i, "内")) dot upright(d) arrow(bold(r))_i' $
+2. 该质点受到的合力为 $vec(F)_(i, "外") + vec(F)_(i, "内")$ . 根据动能定理，在实验室系中，合力功为：
+   $ dif W_i = (vec(F)_(i, "外") + vec(F)_(i, "内")) dot dif vec(r)_i $
+   代入位移分解 $dif vec(r)_i = dif vec(r)_C + dif vec(r)_i'$：
+   $ dif W_i = (vec(F)_(i, "外") + vec(F)_(i, "内")) dot dif vec(r)_C + (vec(F)_(i, "外") + vec(F)_(i, "内")) dot dif vec(r)_i' $
+3. 对所有质点求和，总功 $dif W$ 为：
+   $ dif W = (sum vec(F)_(i, "外") + sum vec(F)_(i, "内")) dot dif vec(r)_C + sum (vec(F)_(i, "外") + vec(F)_(i, "内")) dot dif vec(r)_i' $
+4. 利用质心运动定理 $sum vec(F)_(i, "外") = M vec(a)_C$ 以及内力抵消 $sum vec(F)_(i, "内") = 0$，上式变为：
+   $ dif W = (M vec(a)_C dot dif vec(r)_C) + sum (vec(F)_(i, "外") + vec(F)_(i, "内")) dot dif vec(r)_i' $
 5. 观察上式：
-   - 第一项 $M arrow(bold(a))_C dot upright(d) arrow(bold(r))_C$ 正好是质心平动动能的变化量 $upright(d) K_(C)$ . 
+   - 第一项 $M vec(a)_C dot dif vec(r)_C$ 正好是质心平动动能的变化量 $dif K_(C)$ . 
    
-   - 根据柯尼希定理 $K = K_(C) + K_("内")$，且 $upright(d) W = upright(d) K$，则剩下的项必然等于内动能的变化：
-   $ upright(d) K_("内") = sum (arrow(bold(F))_(i, "外") dot upright(d) arrow(bold(r))_i') + sum (arrow(bold(F))_(i, "内") dot upright(d) arrow(bold(r))_i') $
-6. 定义 $W'_("外") = sum arrow(bold(F))_(i, "外") dot upright(d) arrow(bold(r))_i'$ 且 $W_("内") = sum arrow(bold(F))_(i, "内") dot upright(d) arrow(bold(r))_i'$，得证：
+   - 根据柯尼希定理 $K = K_(C) + K_("内")$，且 $dif W = dif K$，则剩下的项必然等于内动能的变化：
+   $ dif K_("内") = sum (vec(F)_(i, "外") dot dif vec(r)_i') + sum (vec(F)_(i, "内") dot dif vec(r)_i') $
+6. 定义 $W'_("外") = sum vec(F)_(i, "外") dot dif vec(r)_i'$ 且 $W_("内") = sum vec(F)_(i, "内") dot dif vec(r)_i'$，得证：
    $ Delta K_("内") = W'_("外") + W_("内") $
 
 
@@ -158,8 +158,8 @@ $ Delta K=W_"内" + W_"外" $
   table.hline(y: 1, stroke: 0.5pt),
   [*研究对象*], [系统的整体平动], [系统的内部运动（转动/形变）],
   [*对应的能量*], [质心动能 $K_C$], [相对动能/内动能 $K_"内"$],
-  [*涉及的力*], [仅合外力 $arrow(bold(F))_"合外"$], [所有内力 + 所有外力],
-  [*对应的位移*], [质心的位移 $upright(d) arrow(bold(r))_C$], [各质点相对质心的位移 $upright(d) arrow(bold(r))'$],
+  [*涉及的力*], [仅合外力 $vec(F)_"合外"$], [所有内力 + 所有外力],
+  [*对应的位移*], [质心的位移 $dif vec(r)_C$], [各质点相对质心的位移 $dif vec(r)'$],
   [*物理意义*], [力在空间上对动量的累积], [力对系统内部能量状态的改变],
   table.hline(stroke: 1.5pt),
 ))

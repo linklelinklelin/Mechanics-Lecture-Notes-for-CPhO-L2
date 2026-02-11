@@ -263,19 +263,19 @@ $ S_球 = 4 pi R^2, quad V_球 = 4 / 3 pi R^3 $
 
 ==== 平面向量
 
-- *基本定理*：同一平面内任意向量 $arrow(bold(a))$ 均可由两个不共线向量 $arrow(bold(e))_1, arrow(bold(e))_2$ 唯一表示：$arrow(bold(a)) = lambda_1 arrow(bold(e))_1 + lambda_2 arrow(bold(e))_2$ . 
+- *基本定理*：同一平面内任意向量 $vec(a)$ 均可由两个不共线向量 $vec(e)_1, vec(e)_2$ 唯一表示：$vec(a) = lambda_1 vec(e)_1 + lambda_2 vec(e)_2$ . 
 
-- *坐标运算*：若 $arrow(bold(a))=(x_1, y_1), arrow(bold(b))=(x_2, y_2)$，则：
-$ |arrow(bold(a))| = sqrt(x_1^2 + y_1^2) $
+- *坐标运算*：若 $vec(a)=(x_1, y_1), vec(b)=(x_2, y_2)$，则：
+$ |vec(a)| = sqrt(x_1^2 + y_1^2) $
 - *数量积（内积）*：
-$ arrow(bold(a)) dot arrow(bold(b)) = |arrow(bold(a))||arrow(bold(b))| cos theta = x_1 x_2 + y_1 y_2 $
-*几何意义：$arrow(bold(a)) dot arrow(bold(b))$ 等于 $arrow(bold(a))$ 的模与 $arrow(bold(b))$ 在 $arrow(bold(a))$ 方向上投影的乘积 . *
+$ vec(a) dot vec(b) = |vec(a)||vec(b)| cos theta = x_1 x_2 + y_1 y_2 $
+*几何意义：$vec(a) dot vec(b)$ 等于 $vec(a)$ 的模与 $vec(b)$ 在 $vec(a)$ 方向上投影的乘积 . *
 
 - *矢量积（外积）*：
-对于平面向量 $arrow(bold(a))=(x_1, y_1), arrow(bold(b))=(x_2, y_2)$，其矢量积的大小定义为以 $arrow(bold(a)), arrow(bold(b))$ 为邻边的平行四边形的面积（带符号）：
-其大小满足 $|arrow(bold(a)) times arrow(bold(b))| = |arrow(bold(a))||arrow(bold(b))| sin theta$ . 
+对于平面向量 $vec(a)=(x_1, y_1), vec(b)=(x_2, y_2)$，其矢量积的大小定义为以 $vec(a), vec(b)$ 为邻边的平行四边形的面积（带符号）：
+其大小满足 $|vec(a) times vec(b)| = |vec(a)||vec(b)| sin theta$ . 
 
-$ arrow(bold(a)) times arrow(bold(b)) = 
+$ vec(a) times vec(b) = 
   mat(
     delim: "|",
     (bold(hat(i))), (bold(hat(j))), (bold(hat(k)));

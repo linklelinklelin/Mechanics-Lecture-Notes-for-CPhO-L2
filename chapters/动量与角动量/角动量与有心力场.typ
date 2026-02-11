@@ -8,15 +8,15 @@
 === 角动量的定义：动量矩
 
 #definition(title:"角动量")[
-  设质点质量为 $m$，动量为 $arrow(bold(p)) = m arrow(bold(v))$，质点相对于参考点 $O$ 的位矢为 $arrow(bold(r))$ . 定义质点对 $O$ 点的*角动量*（又称动量矩）为位矢与动量的矢量积：
-$ arrow(bold(L)) = arrow(bold(r)) times arrow(bold(p)) = m (arrow(bold(r)) times arrow(bold(v))) $
+  设质点质量为 $m$，动量为 $vec(p) = m vec(v)$，质点相对于参考点 $O$ 的位矢为 $vec(r)$ . 定义质点对 $O$ 点的*角动量*（又称动量矩）为位矢与动量的矢量积：
+$ vec(L) = vec(r) times vec(p) = m (vec(r) times vec(v)) $
 ]
 
 
-- *矢量特性*：根据右手螺旋定则，角动量 $arrow(bold(L))$ 垂直于 $arrow(bold(r))$ 与 $arrow(bold(v))$ 确定的平面 . 
+- *矢量特性*：根据右手螺旋定则，角动量 $vec(L)$ 垂直于 $vec(r)$ 与 $vec(v)$ 确定的平面 . 
 
 - *大小计算*：$L = r m v sin alpha$ . 其中 $alpha$ 为位矢与速度方向的夹角 . 
-- *特殊情况*：当质点做半径为 $R$ 的圆周运动时，$arrow(bold(r))$ 与 $arrow(bold(v))$ 始终垂直，角动量大小简化为 $L = m v R$ . 
+- *特殊情况*：当质点做半径为 $R$ 的圆周运动时，$vec(r)$ 与 $vec(v)$ 始终垂直，角动量大小简化为 $L = m v R$ . 
 
 - *质心系的角动量（类比柯尼希定理）*
 对于质点系，总角动量等于随质心平动的角动量与相对质心运动的角动量之和 . 这一分解在处理既有平动又有转动的刚体问题（如滚动的小球）时非常有用 . 
@@ -24,38 +24,38 @@ $ arrow(bold(L)) = arrow(bold(r)) times arrow(bold(p)) = m (arrow(bold(r)) times
 === 角动量定理：力矩的积累
 
 ==== 1. 微分形式：转动的牛顿第二定律
-我们将角动量 $arrow(bold(L))$ 对时间求导，探究其变化原因：
-$ (upright(d) arrow(bold(L))) / (upright(d) t) = (upright(d) (arrow(bold(r)) times arrow(bold(p)))) / (upright(d) t) = ((upright(d) arrow(bold(r))) / (upright(d) t) times arrow(bold(p))) + (arrow(bold(r)) times (upright(d) arrow(bold(p))) / (upright(d) t)) $
-由于 $(upright(d) arrow(bold(r))) / (upright(d) t) = arrow(bold(v))$ 且 $arrow(bold(v)) times (m arrow(bold(v))) = 0$，上式简化为：
-$ (upright(d) arrow(bold(L))) / (upright(d) t) = arrow(bold(r)) times arrow(bold(F)) = arrow(bold(M)) $
+我们将角动量 $vec(L)$ 对时间求导，探究其变化原因：
+$ (dif vec(L)) / (dif t) = (dif (vec(r) times vec(p))) / (dif t) = ((dif vec(r)) / (dif t) times vec(p)) + (vec(r) times (dif vec(p)) / (dif t)) $
+由于 $(dif vec(r)) / (dif t) = vec(v)$ 且 $vec(v) times (m vec(v)) = 0$，上式简化为：
+$ (dif vec(L)) / (dif t) = vec(r) times vec(F) = vec(M) $
 
 #theorem(title: "角动量定理")[
-  物体所受合外力对某点的力矩 $arrow(bold(M))$，等于物体对该点的角动量随时间的变化率 . 
+  物体所受合外力对某点的力矩 $vec(M)$，等于物体对该点的角动量随时间的变化率 . 
 ]
 
 
 ==== 2. 积分形式：角动量冲量
 在一段时间间隔 $[t_1, t_2]$ 内，力矩对时间的累积称为*冲量矩* . 角动量定理的积分形式为：
-$ integral_(t_1)^(t_2) arrow(bold(M)) upright(d) t = arrow(bold(L))_2 - arrow(bold(L))_1 $
+$ integral_(t_1)^(t_2) vec(M) dif t = vec(L)_2 - vec(L)_1 $
 
 === 有心力场与角动量守恒
 
 ==== 1. 什么是有心力场？
-如果一个质点受到的作用力 $arrow(bold(F))$ 始终指向（或背离）空间中某一个固定点 $O$，则称该力场为*有心力场*，点 $O$ 称为力中心 . 
+如果一个质点受到的作用力 $vec(F)$ 始终指向（或背离）空间中某一个固定点 $O$，则称该力场为*有心力场*，点 $O$ 称为力中心 . 
 
 - *典型例子*：万有引力场、库仑电场 . 
 
-- *核心力学性质*：由于力 $arrow(bold(F))$ 的作用线始终通过点 $O$，力对中心 $O$ 的力矩恒等于零：
-  $ arrow(bold(M)) = arrow(bold(r)) times arrow(bold(F)) = 0 $
+- *核心力学性质*：由于力 $vec(F)$ 的作用线始终通过点 $O$，力对中心 $O$ 的力矩恒等于零：
+  $ vec(M) = vec(r) times vec(F) = 0 $
 
 ==== 2. 有心力场中的角动量守恒
-在有心力场中，由于 $arrow(bold(M)) = 0$，根据角动量定理，质点对力中心的角动量 $arrow(bold(L))$ 保持不变：
-$ arrow(bold(L)) = m (arrow(bold(r)) times arrow(bold(v))) = "常量" $
+在有心力场中，由于 $vec(M) = 0$，根据角动量定理，质点对力中心的角动量 $vec(L)$ 保持不变：
+$ vec(L) = m (vec(r) times vec(v)) = "常量" $
 这一守恒律带来两个极其重要的物理推论：
 
-- *平面运动*：由于 $arrow(bold(L))$ 方向不变，且 $arrow(bold(r))$ 始终垂直于 $arrow(bold(L))$，因此质点的运动轨迹必然被锁定在与 $arrow(bold(L))$ 垂直的平面内 . 
+- *平面运动*：由于 $vec(L)$ 方向不变，且 $vec(r)$ 始终垂直于 $vec(L)$，因此质点的运动轨迹必然被锁定在与 $vec(L)$ 垂直的平面内 . 
 
-- *开普勒第二定律（面积定律）*：质点的扫过面积速率 $ (upright(d) A) / (upright(d) t) = (1) / (2) |arrow(bold(r)) times arrow(bold(v))| = (L) / (2m) $ 由于 $L$ 守恒，行星在相等时间内扫过的面积相等 . 
+- *开普勒第二定律（面积定律）*：质点的扫过面积速率 $ (dif A) / (dif t) = (1) / (2) |vec(r) times vec(v)| = (L) / (2m) $ 由于 $L$ 守恒，行星在相等时间内扫过的面积相等 . 
 
 === 角动量守恒的应用判据
 

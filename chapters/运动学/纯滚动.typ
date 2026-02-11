@@ -21,10 +21,10 @@ $ v_C = omega R, quad a_C = alpha R $
 
 1. *定义*：在平面运动中，刚体上瞬时速度为零的点称为*瞬心* . 
 
-2. *纯滚动的瞬心*：纯滚动时，刚体与地面的*接触点* $P$ 即为瞬心，即 $arrow(bold(v))_P = 0$ . 
+2. *纯滚动的瞬心*：纯滚动时，刚体与地面的*接触点* $P$ 即为瞬心，即 $vec(v)_P = 0$ . 
 3. *速度分布*：刚体上任意点 $Q$ 的速度可以表示为绕瞬心 $P$ 的瞬时转动：
 
-$ arrow(bold(v))_Q = arrow(bold(omega)) times arrow(bold(P Q)) $
+$ vec(v)_Q = vec(omega) times vec(P Q) $
 
    - *运动分解*：纯滚动可分解为随质心的平动（速度 $v_C$）和绕质心的转动（角速度 $omega$） . 但在速度分析中，统一视为绕瞬心 $P$ 的瞬时转动往往更为简便 . 
 
@@ -34,13 +34,13 @@ $ arrow(bold(v))_Q = arrow(bold(omega)) times arrow(bold(P Q)) $
 
 1. *瞬心的加速度*：
 
-$ arrow(bold(a))_P = omega^2 R (bold(hat(n))) $
-   其中 $arrow(bold(n))$ 为指向质心的单位矢量 . 这表明瞬心在此时刻只有法向加速度 . 
+$ vec(a)_P = omega^2 R (bold(hat(n))) $
+   其中 $vec(n)$ 为指向质心的单位矢量 . 这表明瞬心在此时刻只有法向加速度 . 
    
 2. *质心的加速度*：
 
-$ arrow(bold(a))_C = (alpha R) (bold(hat(tau))) + (omega^2 R) (bold(hat(n))) $
-   其中 $(bold(hat(tau)))$ 指向质心运动的切向，$(bold(hat(n)))$ 指向接触面法向 . 对于在平直轨道上滚动的圆轮，$arrow(bold(a))_C$ 的大小通常简化为 $alpha R$ . 
+$ vec(a)_C = (alpha R) (bold(hat(tau))) + (omega^2 R) (bold(hat(n))) $
+   其中 $(bold(hat(tau)))$ 指向质心运动的切向，$(bold(hat(n)))$ 指向接触面法向 . 对于在平直轨道上滚动的圆轮，$vec(a)_C$ 的大小通常简化为 $alpha R$ . 
 
 #pagebreak()
 

@@ -10,7 +10,7 @@
 
 
 根据保守力的定义，力是势能函数的负梯度：
-$ arrow(bold(F)) = - nabla V $
+$ vec(F) = - nabla V $
 这意味着：
 - *力的方向*：力总是指向势能降低最快的方向 . 
 
@@ -26,15 +26,15 @@ $ arrow(bold(F)) = - nabla V $
   一根长度为 $L$、质量为 $M$ 的均匀柔性细绳，两端固定在等高点 . 绳子在重力场中自然下垂形成的曲线称为悬链线 . 设绳子的线密度为 $lambda = (M) / (L)$，最低点为坐标原点 $O(0,0)$，水平方向为 $x$ 轴，竖直方向为 $y$ 轴 . 请按以下要求尝试求解细绳的形状方程 $y(x)$ . 
 
 
-  (1) *受力分析法*：取绳上任一微元 $upright(d) s$，其两端的张力分别为 $arrow(bold(T))(x)$ 和 $arrow(bold(T))(x+upright(d) x)$ . 利用微元在水平和竖直方向的平衡条件，证明其满足微分方程：
-  $ (d^2 y) / (upright(d) x^2) = (lambda g) / (T_0) sqrt((1 + ((upright(d) y) / (upright(d) x))^2)) $
+  (1) *受力分析法*：取绳上任一微元 $dif s$，其两端的张力分别为 $vec(T)(x)$ 和 $vec(T)(x+dif x)$ . 利用微元在水平和竖直方向的平衡条件，证明其满足微分方程：
+  $ (d^2 y) / (dif x^2) = (lambda g) / (T_0) sqrt((1 + ((dif y) / (dif x))^2)) $
   其中 $T_0$ 为绳子最低点的张力 . 
 
   (2) *虚功原理法*：假设系统发生了一个满足约束条件（绳长 $L$ 不变）的微小虚位移 $delta y(x)$ . 利用理想约束下主动力虚功之和为零的判据 $delta W = 0$，尝试建立绳子各部分重力与张力变化的内在联系，并导出与 (1) 相同的方程 . 
 
   (3) *能量极小值法（变分初步）*：系统的总重力势能可以表示为积分：
-  $ V = integral lambda g y upright(d) s = integral_(-a)^(a) lambda g y sqrt((1 + ((upright(d) y) / (upright(d) x))^2)) upright(d) x $
-  在约束条件 $integral_(-a)^(a) sqrt((1 + ((upright(d) y) / (upright(d) x))^2)) upright(d) x = L$ 下，寻找使总势能 $V$ 取极小值的曲线形状 . 请论述：为什么这一几何要求最终会导致细绳呈现双曲余弦函数 $y = C_1 cosh((x) / (C_2))$ 的形式？
+  $ V = integral lambda g y dif s = integral_(-a)^(a) lambda g y sqrt((1 + ((dif y) / (dif x))^2)) dif x $
+  在约束条件 $integral_(-a)^(a) sqrt((1 + ((dif y) / (dif x))^2)) dif x = L$ 下，寻找使总势能 $V$ 取极小值的曲线形状 . 请论述：为什么这一几何要求最终会导致细绳呈现双曲余弦函数 $y = C_1 cosh((x) / (C_2))$ 的形式？
 
   *提示*：双曲余弦函数的定义为 $cosh(x) = (e^x + e^(-x)) / (2)$，其导数为 $sinh(x)$，且满足 $cosh^2 x - sinh^2 x = 1$ . 
 ]

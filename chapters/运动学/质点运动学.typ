@@ -1,4 +1,4 @@
-#import "../../format/lib.typ":*
+/*  */#import "../../format/lib.typ":*
 #import "../../format/utils.typ":*
 
 == 质点运动学
@@ -30,13 +30,13 @@
 1. *位置矢量*：
 
 #definition(title: "位矢")[
-  从坐标原点 $O$ 到 $t$ 时刻质点位置 $P$ 引出的矢量 $arrow(bold(r))$ . 
+  从坐标原点 $O$ 到 $t$ 时刻质点位置 $P$ 引出的矢量 $vec(r)$ . 
 ]
 
 
-- *分量式*：$arrow(bold(r)) = x bold(hat(i)) + y bold(hat(j)) + z bold(hat(k))$
+- *分量式*：$vec(r) = x bold(hat(i)) + y bold(hat(j)) + z bold(hat(k))$
 
-- *大小*：$r = |arrow(bold(r))| = sqrt(x^2 + y^2 + z^2)$
+- *大小*：$r = |vec(r)| = sqrt(x^2 + y^2 + z^2)$
 - *方向*：由方向余弦确定，满足 $cos^2 alpha + cos^2 beta + cos^2 gamma = 1$ . 
 
 #figure(
@@ -45,7 +45,7 @@
 )
 
 2. *运动学方程*：
-$ arrow(bold(r)) = arrow(bold(r))(t) $
+$ vec(r) = vec(r)(t) $
 - 分量形式为：$x = x(t), y = y(t), z = z(t)$ . 
 
 - 消去参数 $t$ 可得*轨迹方程* . 
@@ -54,9 +54,9 @@ $ arrow(bold(r)) = arrow(bold(r))(t) $
 
 #definition(title: "位移")[
   
-  描述质点位置变化的矢量 . 从始点 $A$ 指向终点 $B$ 的有向线段 . 记作 $Delta arrow(bold(r))$ . 
+  描述质点位置变化的矢量 . 从始点 $A$ 指向终点 $B$ 的有向线段 . 记作 $Delta vec(r)$ . 
 
-  $ Delta arrow(bold(r)) = arrow(bold(r))_B - arrow(bold(r))_A = (x_B - x_A)bold(hat(i)) + (y_B - y_A)bold(hat(j)) + (z_B - z_A)bold(hat(k)) $
+  $ Delta vec(r) = vec(r)_B - vec(r)_A = (x_B - x_A)bold(hat(i)) + (y_B - y_A)bold(hat(j)) + (z_B - z_A)bold(hat(k)) $
 ]
 
 - *注意*：
@@ -74,26 +74,26 @@ $ arrow(bold(r)) = arrow(bold(r))(t) $
 
 1. *速度*：
 
-- *平均速度*：$arrow(bold(v))_(a v g) = (Delta arrow(bold(r))) / (Delta t)$ . 方向与 $Delta arrow(bold(r))$ 相同 . 
+- *平均速度*：$vec(v)_(a v g) = (Delta vec(r)) / (Delta t)$ . 方向与 $Delta vec(r)$ 相同 . 
 
-- *瞬时速度*：$arrow(bold(v)) = lim_(Delta t -> 0) (Delta arrow(bold(r))) / (Delta t) = (upright(d) arrow(bold(r))) / (dt)$ . 方向为轨迹的切线方向 . 
-- *速率*：瞬时速度的大小，$v = |arrow(bold(v))| = (ds) / (dt)$ . 是标量 . 
+- *瞬时速度*：$vec(v) = lim_(Delta t -> 0) (Delta vec(r)) / (Delta t) = (dif vec(r)) / (dt)$ . 方向为轨迹的切线方向 . 
+- *速率*：瞬时速度的大小，$v = |vec(v)| = (ds) / (dt)$ . 是标量 . 
 
 2. *加速度*：
 
-- *平均加速度*：$arrow(bold(a))_(a v g) = (Delta arrow(bold(v)) ) / (Delta t)$ . 
+- *平均加速度*：$vec(a)_(a v g) = (Delta vec(v) ) / (Delta t)$ . 
 
-- *瞬时加速度*：$arrow(bold(a)) = lim_(Delta t -> 0) (Delta arrow(bold(v))) / (Delta t) = (upright(d) arrow(bold(v))) / (dt) = (d^2 arrow(bold(r))) / (dt^2)$ . 方向是速度增量的极限方向 . 
+- *瞬时加速度*：$vec(a) = lim_(Delta t -> 0) (Delta vec(v)) / (Delta t) = (dif vec(v)) / (dt) = (d^2 vec(r)) / (dt^2)$ . 方向是速度增量的极限方向 . 
 
 3. *重要关系式*
 
-- 积分关系（已知加速度求速度和位移）：$arrow(bold(v))(t) = arrow(bold(v))_0 + integral_0^t arrow(bold(a)) dt$ ，$arrow(bold(r))(t) = arrow(bold(r))_0 + integral_0^t arrow(bold(v)) dt$
+- 积分关系（已知加速度求速度和位移）：$vec(v)(t) = vec(v)_0 + integral_0^t vec(a) dt$ ，$vec(r)(t) = vec(r)_0 + integral_0^t vec(v) dt$
 
 - 链式法则（加速度的另一种表示）：$a=dv/dt=dv/dx⋅dx/dt=v dv/dx$
 
 4. *自然坐标系*
 
-$ arrow(bold(a)) = dv / dt bold(hat(tau)) + (v^2) / rho bold(hat(n)) $
+$ vec(a) = dv / dt bold(hat(tau)) + (v^2) / rho bold(hat(n)) $
 
 - 即加速度可以分解为切向加速度与法向加速度 . 
 
@@ -116,5 +116,6 @@ $ arrow(bold(a)) = dv / dt bold(hat(tau)) + (v^2) / rho bold(hat(n)) $
   ]
 
 ]
+
 
 #pagebreak()

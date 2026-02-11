@@ -12,20 +12,20 @@
 
 #definition(title:"角位移")[
   
-  *角位移* $arrow(bold(Delta theta))$ 表示在 $Delta t$ 时间内半径转过的角度 . 角位移的方向由右手螺旋定则确定 . 顺时针转动指向纸内方向，逆时针转动指向纸外方向 . 
+  *角位移* $vec(Delta theta)$ 表示在 $Delta t$ 时间内半径转过的角度 . 角位移的方向由右手螺旋定则确定 . 顺时针转动指向纸内方向，逆时针转动指向纸外方向 . 
 ]
 
 
 2. *角速度*：
 描述角位置随时间变化的快慢 . 
 
-$ arrow(bold(omega)) = (upright(d) arrow(bold(theta))) / (dt) $
+$ vec(omega) = (dif vec(theta)) / (dt) $
 
 3. *角加速度*：
 
 描述角速度随时间变化的率 . 
 
-$ arrow(bold(alpha)) = (upright(d) arrow(bold(omega))) / (dt) = (upright(d)^2 arrow(bold(theta))) / (dt^2) $ . 
+$ vec(alpha) = (dif vec(omega)) / (dt) = (dif ^2 vec(theta)) / (dt^2) $ . 
 
 
 === 匀速圆周运动与变速圆周运动
@@ -40,13 +40,13 @@ $ arrow(bold(alpha)) = (upright(d) arrow(bold(omega))) / (dt) = (upright(d)^2 ar
 
 2. *变速圆周运动与加速度分解*：
 
-质点的加速度 $arrow(bold(a))$ 可分解为切向加速度 $arrow(bold(a))_tau$ 和法向加速度 $arrow(bold(a))_n$：
+质点的加速度 $vec(a)$ 可分解为切向加速度 $vec(a)_tau$ 和法向加速度 $vec(a)_n$：
 
 - *切向加速度*：$a_tau = (d v) / (dt)$ . 反映速度*大小*的变化快慢 . 
 
 - *法向（向心）加速度*：$a_n = (v^2) / (R) = R omega^2$ . 反映速度*方向*的变化快慢，始终指向圆心 . 
 
-- *全加速度*：$arrow(bold(a)) = arrow(bold(a))_tau + arrow(bold(a))_n$，其大小为 $a = sqrt((a_tau)^2 + (a_n)^2)$ . 
+- *全加速度*：$vec(a) = vec(a)_tau + vec(a)_n$，其大小为 $a = sqrt((a_tau)^2 + (a_n)^2)$ . 
 
 === 角量与线量的关系
 
@@ -60,12 +60,12 @@ $ arrow(bold(alpha)) = (upright(d) arrow(bold(omega))) / (dt) = (upright(d)^2 ar
 === 矢量表示与重要结论
 
 1. *角速度与线速度矢量关系*：
-$ arrow(bold(v)) = arrow(bold(omega)) times arrow(bold(r)) $
+$ vec(v) = vec(omega) times vec(r) $
 
 2. *角加速度与线加速度矢量关系*：
-若用 $arrow(bold(beta))$ 表示角加速度矢量，则：
-$ arrow(bold(a)) = arrow(bold(beta)) times arrow(bold(r)) + arrow(bold(omega)) times (arrow(bold(omega)) times arrow(bold(r))) $
-其中 $arrow(bold(beta)) times arrow(bold(r))$ 为切向加速度，$arrow(bold(omega)) times (arrow(bold(omega)) times arrow(bold(r)))$ 为法向加速度 . 
+若用 $vec(beta)$ 表示角加速度矢量，则：
+$ vec(a) = vec(beta) times vec(r) + vec(omega) times (vec(omega) times vec(r)) $
+其中 $vec(beta) times vec(r)$ 为切向加速度，$vec(omega) times (vec(omega) times vec(r))$ 为法向加速度 . 
 
 3. *匀变速圆周运动公式*（类比匀变速直线运动）：
 - $omega = omega_0 + alpha t$

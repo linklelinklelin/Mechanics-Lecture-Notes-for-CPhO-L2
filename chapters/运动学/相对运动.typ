@@ -20,42 +20,42 @@
 当运动参考系 $K'$ 相对静止参考系 $K$ 仅作平动时，各物理量的关系如下：
 
 1. *位置关系*：
-$ arrow(bold(r))_(13) = arrow(bold(r))_(12) + arrow(bold(r))_(23) $
+$ vec(r)_(13) = vec(r)_(12) + vec(r)_(23) $
 
 2. *速度变换（伽利略速度变换）*：
-$ arrow(bold(v))_(13) = arrow(bold(v))_(12) + arrow(bold(v))_(23) $
-即：*绝对速度 = 相对速度 + 牵连速度* ($arrow(bold(v))_a = arrow(bold(v))_r + arrow(bold(v))_e$) . 
+$ vec(v)_(13) = vec(v)_(12) + vec(v)_(23) $
+即：*绝对速度 = 相对速度 + 牵连速度* ($vec(v)_a = vec(v)_r + vec(v)_e$) . 
 
 3. *加速度变换*：
-$ arrow(bold(a))_(13) = arrow(bold(a))_(12) + arrow(bold(a))_(23) $
-即：*绝对加速度 = 相对加速度 + 牵连加速度* ($arrow(bold(a))_a = arrow(bold(a))_r + arrow(bold(a))_e$) . 
+$ vec(a)_(13) = vec(a)_(12) + vec(a)_(23) $
+即：*绝对加速度 = 相对加速度 + 牵连加速度* ($vec(a)_a = vec(a)_r + vec(a)_e$) . 
 
-*注*：下标约定，如 $arrow(bold(v))_(13)$ 表示物体 1 相对于参考系 3 的速度 . 
+*注*：下标约定，如 $vec(v)_(13)$ 表示物体 1 相对于参考系 3 的速度 . 
 
 - *原则一*：合速度的前脚标与第一个分速度的前脚标相同；合速度的后脚标与最后一个分速度的后脚标相同 . 
 
 - *原则二*：前面一个分速度的后脚标和相邻的后面一个分速度的前脚标相同 . 
-- *原则三*：速度的前后脚标对调，改变符号（如 $arrow(bold(v))_(12) = -arrow(bold(v))_(21)$） . 
+- *原则三*：速度的前后脚标对调，改变符号（如 $vec(v)_(12) = -vec(v)_(21)$） . 
 
 === 转动参考系下的变换公式
 
-当参考系 2 相对于参考系 3 转动时，角速度为 $arrow(bold(omega))_(23)$，牵连速度包含平动与转动线速度部分 . 
+当参考系 2 相对于参考系 3 转动时，角速度为 $vec(omega)_(23)$，牵连速度包含平动与转动线速度部分 . 
 
 1. *速度变换*：
-$ arrow(bold(v))_(13) = arrow(bold(v))_(12) + arrow(bold(omega))_(23) times arrow(bold(r))_(12) + arrow(bold(v))_(23) $
-其中 $arrow(bold(omega))_(23) times arrow(bold(r))_(12)$ 为转动产生的线速度分量 . 
+$ vec(v)_(13) = vec(v)_(12) + vec(omega)_(23) times vec(r)_(12) + vec(v)_(23) $
+其中 $vec(omega)_(23) times vec(r)_(12)$ 为转动产生的线速度分量 . 
 
 2. *加速度变换（完整形式）*：
-$ arrow(bold(a))_(13) = arrow(bold(a))_(12) + arrow(bold(a))_(23) + 2 arrow(bold(omega))_(23) times arrow(bold(v))_(12) + arrow(bold(omega))_(23) times (arrow(bold(omega))_(23) times arrow(bold(r))_(12)) + arrow(bold(alpha))_(23) times arrow(bold(r))_(12) $
+$ vec(a)_(13) = vec(a)_(12) + vec(a)_(23) + 2 vec(omega)_(23) times vec(v)_(12) + vec(omega)_(23) times (vec(omega)_(23) times vec(r)_(12)) + vec(alpha)_(23) times vec(r)_(12) $
 
 \
 *各项物理意义*：
-- $arrow(bold(a))_(12)$：相对加速度 . 
+- $vec(a)_(12)$：相对加速度 . 
 
-- $arrow(bold(a))_(23)$：牵连平动加速度 . 
-- $2 arrow(bold(omega))_(23) times arrow(bold(v))_(12)$：*科里奥利加速度 (Coriolis Acceleration)* . 
-- $arrow(bold(omega))_(23) times (arrow(bold(omega))_(23) times arrow(bold(r))_(12))$：向心加速度 . 
-- $arrow(bold(alpha))_(23) times arrow(bold(r))_(12)$：切向加速度（由角加速度产生） . 
+- $vec(a)_(23)$：牵连平动加速度 . 
+- $2 vec(omega)_(23) times vec(v)_(12)$：*科里奥利加速度 (Coriolis Acceleration)* . 
+- $vec(omega)_(23) times (vec(omega)_(23) times vec(r)_(12))$：向心加速度 . 
+- $vec(alpha)_(23) times vec(r)_(12)$：切向加速度（由角加速度产生） . 
 
 \
 \

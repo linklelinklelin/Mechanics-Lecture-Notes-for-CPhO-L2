@@ -7,19 +7,19 @@
 
 === 功的定义与路径依赖
 
-功 $W$ 是力在空间上的积累 . 对于一个变力 $arrow(bold(F))$ 沿路径 $L$ 移动微小位移 $upright(d) arrow(bold(r))$. 
+功 $W$ 是力在空间上的积累 . 对于一个变力 $vec(F)$ 沿路径 $L$ 移动微小位移 $dif vec(r)$. 
 
 #definition(title:"功")[
   功的定义为力与位移标量积的积分：
 
-$ W = integral_L arrow(bold(F)) dot upright(d) arrow(bold(r)) = integral_L (F_x dx + F_y dy + F_z dz) $
+$ W = integral_L vec(F) dot dif vec(r) = integral_L (F_x dx + F_y dy + F_z dz) $
 ]
 
 
 
 - *非保守力*：如摩擦力，其作功的大小与路径的长短、形状密切相关 . 路径越长，消耗的能量越多 . 
 
-- *保守力*：如重力、静电力、弹力 . 其作功的大小*仅取决于始末位置*，而与具体路径无关 . 这意味着沿任意闭合路径走一圈，保守力作的功恒等于零（$integral.cont arrow(bold(F)) dot upright(d) arrow(bold(r)) = 0$） . 
+- *保守力*：如重力、静电力、弹力 . 其作功的大小*仅取决于始末位置*，而与具体路径无关 . 这意味着沿任意闭合路径走一圈，保守力作的功恒等于零（$integral.cont vec(F) dot dif vec(r) = 0$） . 
 
 #remark[
   功和能量之间的关系到底是什么？我们在后续章节会讨论这个问题 . 
@@ -27,15 +27,15 @@ $ W = integral_L arrow(bold(F)) dot upright(d) arrow(bold(r)) = integral_L (F_x 
 
 === 势能的诞生
 
-正是由于保守力作功与路径无关，我们才能对空间中每一个点定义一个唯一的标量函数——*势能* $V(arrow(bold(r)))$ . 
+正是由于保守力作功与路径无关，我们才能对空间中每一个点定义一个唯一的标量函数——*势能* $V(vec(r))$ . 
 
 #definition(title:"势能")[
-  保守力 $arrow(bold(F))$ 作的功等于势能增量的负值 . 
-$ upright(d) V = -arrow(bold(F)) dot upright(d) arrow(bold(r)) $
+  保守力 $vec(F)$ 作的功等于势能增量的负值 . 
+$ dif V = -vec(F) dot dif vec(r) $
 
 ]
 
-- 积分形式为：$V(B) - V(A) = - integral_A^B arrow(bold(F)) dot upright(d) arrow(bold(r))$ . 
+- 积分形式为：$V(B) - V(A) = - integral_A^B vec(F) dot dif vec(r)$ . 
   
 - *物理直观*：当你克服保守力移动物体时（如举起重物），你所作的功并没有“消失”，而是转化为了系统内禀的“势能” . 
 
@@ -66,7 +66,7 @@ $ F_x = -(partial V) / (partial x), quad F_y = -(partial V) / (partial y), quad 
 在处理如离心分离机或旋转液体等问题时，在旋转参考系中，离心力 $F_c = m omega^2 r$ 也可以看作一种保守力 . 
 
 - *离心势能*：
-  $ V_c = - integral_0^r (m omega^2 r) upright(d) r = -(1) / (2) m omega^2 r^2 $
+  $ V_c = - integral_0^r (m omega^2 r) dif r = -(1) / (2) m omega^2 r^2 $
   
   通过引入这种“虚拟”的势能，我们可以将复杂的动力学转动问题转化为静力学平衡问题 . 
 

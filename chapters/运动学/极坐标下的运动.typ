@@ -40,23 +40,23 @@ $ cases(
 
 2. *单位矢量对时间的导数*：
   由于单位矢量的方向随质点运动而改变，它们对时间的导数不为零：
-  $ (upright(d) hat(r)) / (dt) = (dot(theta)) hat(theta) $
-  $ (upright(d) hat(theta)) / (dt) = (-dot(theta)) hat(r) $
+  $ (dif hat(r)) / (dt) = (dot(theta)) hat(theta) $
+  $ (dif hat(theta)) / (dt) = (-dot(theta)) hat(r) $
   *物理意义*：单位矢量的变化率与其转动角速度有关，方向指向其变化的方向 . 
 
 === 位矢、速度与加速度的表达式
 
 1. *位矢*：
-$ arrow(bold(r)) = r hat(r) $
+$ vec(r) = r hat(r) $
 
 2. *速度*：
   对位矢求一阶导数：
-$ arrow(bold(v)) = (upright(d) arrow(bold(r))) / (dt) = (dot(r)) hat(r) + (r dot(theta)) hat(theta) $
+$ vec(v) = (dif vec(r)) / (dt) = (dot(r)) hat(r) + (r dot(theta)) hat(theta) $
   - $(dot(r)) hat(r)$ 称为*径向速度*；$(r dot(theta)) hat(theta)$ 称为*横向速度* . 
 
 3. *加速度*：
   对速度求一阶导数：
-$ arrow(bold(a)) = (upright(d) arrow(bold(v))) / (dt) = (dot.double(r) - r dot(theta)^2) hat(r) + (r dot.double(theta) + 2 dot(r) dot(theta)) hat(theta) $
+$ vec(a) = (dif vec(v)) / (dt) = (dot.double(r) - r dot(theta)^2) hat(r) + (r dot.double(theta) + 2 dot(r) dot(theta)) hat(theta) $
   - $(dot.double(r) - r dot(theta)^2)$ 为*径向加速度*（含向心加速度项） . 
   
   - $(r dot.double(theta) + 2 dot(r) dot(theta))$ 为*横向加速度*（含科里奥利加速度项） . 
@@ -64,9 +64,9 @@ $ arrow(bold(a)) = (upright(d) arrow(bold(v))) / (dt) = (dot.double(r) - r dot(t
 === 特殊运动：圆周运动
 
 当质点做圆周运动时，极径 $r = R$（常数），则 $dot(r) = 0, dot.double(r) = 0$ . 
-- *速度*：$arrow(bold(v)) = (R dot(theta)) hat(theta)$
+- *速度*：$vec(v) = (R dot(theta)) hat(theta)$
 
-- *加速度*：$arrow(bold(a)) = (-R dot(theta)^2) hat(r) + (R dot.double(theta)) hat(theta)$
+- *加速度*：$vec(a) = (-R dot(theta)^2) hat(r) + (R dot.double(theta)) hat(theta)$
 
 \
 \
