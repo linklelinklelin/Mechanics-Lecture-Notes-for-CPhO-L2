@@ -8,6 +8,7 @@
 #let ds = $dif s$
 #let dtheta = $dif theta$
 #let vec(x) = math.arrow(math.bold(x))
+#let ddot(x)= math.dot.double(x)
 
 // 自动让 cases 内部的所有内容都以 display 模式显示
 // 定义一个配置函数，用来统一处理所有的排版规则
