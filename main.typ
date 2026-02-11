@@ -3,6 +3,11 @@
 #import "format/watermark.typ":*
 
 #show: apply-settings
+#show math.equation: it => {
+  set text(font: ("New Computer Modern Math", ..ct-fonts.main))
+  show regex("[\u4e00-\u9fa5]+"): set text(style: "normal")
+  it
+}
 #set page(
   // 如果有图片或深色背景，建议用 foreground
   foreground: watermark([2026.02 济南]),
