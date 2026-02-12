@@ -1,5 +1,5 @@
-#import "@preview/shiroa-mdbook:0.3.0": *
-#show: book
+#import "@preview/shiroa-mdbook:0.3.1": *
+//#show: book
 
 #book-meta(
   title: "Mechanics Lecture Notes for CPhO L2",
