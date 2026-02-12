@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install Typst
-        uses: typst/typst-action@v1
+        uses: typst-community/setup-typst@v3
 
       - name: Install Shiroa
         run: cargo install --git https://github.com/Myriad-Dreamin/shiroa --locked shiroa
@@ -28,7 +28,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: build  # ← Shiroa 默认输出目录
+          path: build   # ← Shiroa 默认输出目录
 
   deploy:
     needs: build
