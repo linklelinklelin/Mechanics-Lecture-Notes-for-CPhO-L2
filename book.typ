@@ -1,6 +1,5 @@
-#import "@preview/shiroa-mdbook:0.3.1": *
-//#show: book
-
+#import "@preview/shiroa:0.3.1": *
+#show: book
 #book-meta(
   title: "Mechanics Lecture Notes for CPhO L2",
   authors: ("Linkle",),
@@ -47,3 +46,5 @@
     - #chapter("chapters/appendixMath.typ", section: "A")[数学附录]
   ],
 )
+
+#build-meta(dest-dir: "dist")
