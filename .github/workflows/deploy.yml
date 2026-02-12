@@ -1,0 +1,43 @@
+name: Build & Deploy Shiroa Book
+
+on:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Typst
+        uses: typst/typst-action@v1
+
+      - name: Install Shiroa
+        run: cargo install --git https://github.com/Myriad-Dreamin/shiroa --locked shiroa
+
+      - name: Build Shiroa site
+        run: shiroa build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build  # ← Shiroa 默认输出目录
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
