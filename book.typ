@@ -43,7 +43,7 @@
 
     // 附录
     = 附录
-    - #chapter("chapters/appendixMath.typ", section: "A")[数学附录]
+    - #chapter("chapters/appendixMath.typ")[数学附录]
   ],
 )
 
